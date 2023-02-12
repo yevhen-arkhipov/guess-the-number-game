@@ -9,13 +9,13 @@ let counter = 1;
 
 const randomNumber = Math.round(Math.random() * 10);
 
-console.log(
-  chalk.blue("Hello in our game!", chalk.underline.bgBlue("Guest number") + "!")
-);
-
 const game = () => {
+  console.log(
+    chalk.blue("Hello in our game!", chalk.underline("'Guest number 3000'"))
+  );
+
   if (counter <= limit) {
-    readline.question(chalk.yellow("Enter your number please\n"), (num) => {
+    readline.question(chalk.yellow("Please enter your number\n"), (num) => {
       const number = Number(num);
 
       if (number === randomNumber) {
@@ -26,14 +26,15 @@ const game = () => {
         console.log(chalk.blue("Your number is less, try again!"));
         counter += 1;
         game();
-      } else {
+      }
+      if (number > randomNumber) {
         console.log(chalk.blue("Your number is bigger, try again!"));
         counter += 1;
         game();
       }
     });
   } else {
-    console.log(chalk.red("Game over, buy! :( "));
+    console.log(chalk.red("Game over, buy! :("));
     readline.close();
   }
 };
