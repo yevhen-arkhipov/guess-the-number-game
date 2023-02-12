@@ -4,7 +4,7 @@ const readline = require("readline").createInterface({
   output: process.stdout,
 });
 
-const limit = 10;
+const limit = 5;
 let counter = 1;
 
 const randomNumber = Math.round(Math.random() * 10);
