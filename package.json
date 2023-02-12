@@ -1,0 +1,27 @@
+{
+  "name": "practice-01-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yevhen-arkhipov/practice-01-game.git"
+  },
+  "author": "Yevhen Arkhipov <arkhipovyevhen@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yevhen-arkhipov/practice-01-game/issues"
+  },
+  "homepage": "https://github.com/yevhen-arkhipov/practice-01-game#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
+}
